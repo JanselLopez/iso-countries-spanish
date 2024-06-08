@@ -1,6 +1,6 @@
 {
   "name": "iso-countries-spanish",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "type": "module",
   "description": "The name, iso2 code, iso3 code and phone code of the countries by their spanish names",
   "main": "./dist/index.js",
@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "tsc": "tsc",
-    "build": "tsup",
+    "build": "tsup index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JanselLopez",
@@ -29,5 +29,17 @@
   "devDependencies": {
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
-  }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ]
 }
