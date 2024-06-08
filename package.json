@@ -1,0 +1,33 @@
+{
+  "name": "iso-countries-spanish",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The name, iso2 code, iso3 code and phone code of the countries by their spanish names",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/JanselLopez/iso-countries-spanish.git"
+  },
+  "keywords": [
+    "iso",
+    "alpha",
+    "alpha-2",
+    "aplha-3",
+    "country",
+    "numeric",
+    "countries",
+    "countries name in spanish",
+    "phone"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JanselLopez",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
+}
